@@ -1,3 +1,5 @@
 body {
-    background: blue;
+    font-family: "CustomFont";
+    src: url("https://nlsteadman.github.io/ractivity/css/fonts/neonneon.woff") format("woff"),
+    src: url("https://nlsteadman.github.io/ractivity/css/fonts/neonneon.otf") format("opentype");
 }
