@@ -1,5 +1,16 @@
 body {
-    font-family: "CustomFont";
-    src: url("https://nlsteadman.github.io/ractivity/css/fonts/neonneon.woff") format("woff"),
-    url("https://nlsteadman.github.io/ractivity/css/fonts/neonneon.otf") format("opentype");
+    font-family: "Phosphate", sans-serif;
+    color: #000;
+}
+
+#activityButton {
+    width:200px;
+    margin-top: 10px;
+    border:2px solid #46b8da;
+    color:#045;
+    font-family:phosphate;
+    font-weight: bold;
+    padding:5px;
+    text-decoration: none;
+    text-align: center;
 }
