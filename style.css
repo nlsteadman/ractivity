@@ -7,8 +7,8 @@ body {
 #activityButton {
     width:200px;
     margin-top: 10px;
-    border:2px solid #46b8da;
-    color:#045;
+    border:2px solid red;
+    color:hotpink;
     font-family:phosphate;
     font-weight: bold;
     padding:5px;
@@ -20,8 +20,25 @@ h1 {
     font-size: 100px;
     color: hotpink;
     letter-spacing: 4px;
+    
 }
 
 h3 {
     font-size: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#activityButton:hover {
+    cursor:pointer;
+    background:rgb(243, 165, 204);
+    color: #fff;
+}
+
+#activityButton:active{
+    cursor: pointer;
 }
