@@ -2,21 +2,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById("activityButton");
     const container = document.getElementById("activityDisplay");
     
-
-    button.addEventListener('click', () => {
-        fetch("http://www.boredapi.com/api/activity/")
-            .then(response => response.json())
-            .then(data => {
-                renderActivity(data)
-            })
-    })
-
-    function renderActivity(activity) {
+    function renderActivity(randomActivity) {
+        container.innerHTML = ''
         const p = document.createElement("p");
-        p.textContent = activity
-        container.textContent = ''
-        container.appendChild(p)
-    
+        p.classname = "activity"
+        p.innerText = randomActivity.activity;
+        
+        container.appendChild(p);
+    }
+    function getActivity() {
+        button.addEventListener('click', () => {
+            fetch("http://www.boredapi.com/api/activity/")
+                .then(response => response.json())
+                .then(data => {
+                    renderActivity(data)
+                })
+        })
     }
 
+    getActivity();
 })
