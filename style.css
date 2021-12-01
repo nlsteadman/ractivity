@@ -18,8 +18,10 @@ body {
 
 h1 {
     font-size: 100px;
+    color: hotpink;
+    letter-spacing: 4px;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 30px;
 }
