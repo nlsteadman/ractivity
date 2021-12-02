@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         p.innerText = randomActivity.activity;
         
         container.appendChild(p);
+
+        container.fadeIn(500);
     }
     function getActivity() {
         button.addEventListener('click', () => {
