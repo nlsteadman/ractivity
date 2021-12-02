@@ -27,8 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
             p.innerHTML = randomActivity.activity;
             
             container.appendChild(p);
-
-            container.fadeIn(500);
         })
     }
 })

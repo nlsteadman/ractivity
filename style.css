@@ -31,10 +31,12 @@ h3 {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
-    padding-left: 500px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
 }
 
 #activityButton:hover {
