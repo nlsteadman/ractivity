@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = ''
         const p = document.createElement("p");
         p.classname = "activity"
-        p.innerText = randomActivity.activity;
+        p.innerHTML = randomActivity.activity;
         
         container.appendChild(p);
 
