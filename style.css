@@ -11,7 +11,6 @@ body {
     border:6px solid rgb(166, 236, 238);
     color:hotpink;
     font-family:phosphate;
-    font-weight: bold;
     padding:5px;
     text-decoration: none;
     text-align: center;
@@ -39,6 +38,19 @@ footer {
     padding: 10px;
 }
 
+#likeButton {
+    width:300px;
+    height: 70px;
+    margin-top: 10px;
+    border:6px solid rgb(166, 236, 238);
+    color:rgb(28, 190, 196);
+    font-family:phosphate;
+    padding:5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
 #activityButton:hover {
     cursor:pointer;
     background:rgb(243, 165, 204);
@@ -47,4 +59,22 @@ footer {
 
 #activityButton:active{
     cursor: pointer;
+}
+
+#likeButton:hover {
+    cursor:pointer;
+    background: rgb(245, 245, 155);
+    color: #fff;
+}
+
+#likeButton:active{
+    cursor: pointer;
+}
+
+#activityDisplay {
+    font-size: 30px;
+}
+
+#likedActivities {
+    font-size: 20px;
 }

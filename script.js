@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const button = document.getElementById("activityButton");
     const container = document.getElementById("activityDisplay");
+    const like = document.getElementById("likeButton");
+    const likeContainer = document.getElementById("likedActivities")
     
     
 
@@ -29,5 +31,19 @@ document.addEventListener('DOMContentLoaded', () => {
             container.appendChild(p);
         })
     }
+
+    function keepActivity(p) {
+        like.addEventListener('click', () => {
+
+            const li = document.createElement("li");
+            li.classname = "liked"
+            li.innerHTML = p;
+
+            likeContainer.appendChild(li);
+
+        })
+    }
+
+    keepActivity();
 })
 
