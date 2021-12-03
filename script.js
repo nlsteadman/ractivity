@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const like = document.getElementById("likeButton");
     const likeContainer = document.getElementById("likedActivities")
     
-    
 
     function getActivity() {
         button.addEventListener('click', () => {
@@ -13,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(data => {
                     renderActivity(data)
                 })
-                
         })
     }
 
@@ -29,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             p.innerHTML = randomActivity.activity;
             
             container.appendChild(p);
+
         })
     }
 
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         })
     }
-
     keepActivity();
 })
 
