@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById("activityDisplay");
     const like = document.getElementById("likeButton");
     const likeContainer = document.getElementById("likedActivities");
-    
 
     function getActivity() {
         button.addEventListener('click', () => {
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         container.innerHTML = ''
         const p = document.createElement("p");
-        p.classname = "activity"
         p.innerHTML = randomActivity.activity;
         
         container.appendChild(p);
@@ -30,13 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function keepActivity(currentActivity) {
+        const li = document.createElement("li");
+        li.innerHTML = currentActivity;
+
         like.addEventListener('click', () => {
-            const li = document.createElement("li");
-            li.classname = "liked"
-            li.innerHTML = currentActivity;
+
+            //const li = document.createElement("li");
             
-            likeContainer.append(li);
+            //li.innerHTML = currentActivity;
+            
+            likeContainer.appendChild(li);
         })
     }
+    //keepActivity();
 })
 
