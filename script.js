@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 .then(data => {
                     renderActivity(data)
                 })
-            })
+        })
     }
 
     getActivity();
@@ -28,18 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function keepActivity(currentActivity) {
+        debugger;
         const li = document.createElement("li");
         li.innerHTML = currentActivity;
 
         like.addEventListener('click', () => {
-
-            //const li = document.createElement("li");
-            
-            //li.innerHTML = currentActivity;
-            
             likeContainer.appendChild(li);
         })
     }
-    //keepActivity();
 })
 
