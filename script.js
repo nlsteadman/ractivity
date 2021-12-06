@@ -21,7 +21,6 @@ function getActivity() {
 }
 
 function renderActivity(randomActivity) {
-    
     container.innerHTML = ''
     const p = document.createElement("p");
     p.innerHTML = randomActivity.activity;
