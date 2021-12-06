@@ -4,21 +4,21 @@ const like = document.getElementById("likeButton");
 const likeContainer = document.getElementById("likedActivities");
 
 document.addEventListener('DOMContentLoaded', () => {
-    getActivity()
+    addEventListeners()
 })
 
+function addEventListeners() {
+    button.addEventListener('click', getActivity)
+    like.addEventListener('click', keepActivity)
+}
+
 function getActivity() {
-    button.addEventListener('click', () => {
         fetch("https://www.boredapi.com/api/activity/")
             .then(response => response.json())
             .then(data => {
                 renderActivity(data)
             })
-    })
 }
-
-getActivity();
-
 
 function renderActivity(randomActivity) {
     
@@ -27,16 +27,11 @@ function renderActivity(randomActivity) {
     p.innerHTML = randomActivity.activity;
     
     container.appendChild(p);
-    keepActivity(p.innerHTML);
+        
 }
 
-function keepActivity(currentActivity) {
-    debugger;
+function keepActivity() {
     const li = document.createElement("li");
-    li.innerHTML = currentActivity;
-
-    like.addEventListener('click', () => {
-        likeContainer.append(li);
-    })
+    li.innerText = container.firstElementChild.innerText;
+    likeContainer.append(li);
 }
-
