@@ -13,3 +13,5 @@ Once you find an activity that tickles your fancy, click the "Keep this activity
 For source code, go to my github page: https://github.com/nlsteadman/ractivity.git.
 
 Activities provided by https://www.boredapi.com/.
+
+Icons made by Freepik (https://www.freepik.com) from Flaticon (https://www.flaticon.com/).
