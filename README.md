@@ -10,4 +10,6 @@ Once you find an activity that tickles your fancy, click the "Keep this activity
 
 ## Source
 
-For source code, go to my github page: https://github.com/nlsteadman/ractivity.git
+For source code, go to my github page: https://github.com/nlsteadman/ractivity.git.
+
+Activities provided by https://www.boredapi.com/.
